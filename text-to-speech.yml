@@ -1,9 +1,9 @@
 provider:
   name: faas
-  gateway: http://localhost:8080
+  gateway: http://127.0.0.1:8080
 
 functions:
   text-to-speech:
     lang: Dockerfile
     handler: ./text-to-speech
-    image: rorpage/text-to-speech
+    image: rgee0/text-to-speech:armhf-latest
